@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest - Formulário com validação</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="conteudo">
+            <h2 class="titulo">FICOU COM DÚVIDA? <br> NOS MANDE UMA MENSAGEM!</h2>
+            <p class="descricao">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em
+                contato em menos de 24h.</p>
+        </div>
+
+        <form class="formulario">
+            <div class="lista-inputs">
+                <div class="campo">
+                    <input class="preencher" type="text" id="nome" placeholder="Nome completo *">
+                    <label for="nome" class="alerta">campo obrigatório</label>
+                </div>
+                <div class="campo">
+                    <input class="preencher" type="email" name="email" id="email" placeholder="Email *">
+                    <label for="email" class="alerta">campo obrigatório</label>
+                </div>
+                <div class="campo">
+                    <input class="preencher" type="tel" name="telefone" id="telefone" placeholder="Telefone *">
+                    <label for="telefone" class="alerta">campo obrigatório</label>
+                </div>
+                <div class="campo">
+                    <textarea class="preencher" name="mensagem" id="mensagem" placeholder="Mensagem *"></textarea>
+                    <label for="mensagem" class="alerta">campo obrigatório</label>
+                </div>
+            </div>
+
+            <p class="informacao">campos obrigatórios</p>
+
+            <a href="#" class="botao">
+                <p class="enviar">Enviar</p>
+            </a>
+        </form>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
